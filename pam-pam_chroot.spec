@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{/etc/security,/%{_lib}/security}
 
 install pam_chroot.so $RPM_BUILD_ROOT/%{_lib}/security
-install chroot.conf $RPM_BUILD_ROOT%{_sysconfdir}/security/chroot.conf
+install chroot.conf $RPM_BUILD_ROOT/etc/security/chroot.conf
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,4 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CREDITS options
 %attr(755,root,root) /%{_lib}/security/pam_chroot.so
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/security/chroot.conf
+%config(noreplace) %verify(not size mtime md5) /etc/security/chroot.conf
