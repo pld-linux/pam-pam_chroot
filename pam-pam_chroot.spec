@@ -12,7 +12,7 @@ Source0:	http://www.kernel.org/pub/linux/libs/pam/pre/modules/pam_chroot-%{versi
 # Source0-md5:	cd8ee12235c6bee6b825c295443bd8ae
 URL:		http://www.kernel.org/pub/linux/libs/pam/pre/modules/
 BuildRequires:	pam-devel
-Obsoletes:	%{modulename}
+Obsoletes:	pam_chroot
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
