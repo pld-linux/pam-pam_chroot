@@ -3,7 +3,7 @@ Summary:	PAM chroot module
 Summary(pl):	Modu³ PAM zamykaj±cy u¿ytkownika w chroocie
 Name:		pam-%{modulename}
 Version:	0.6
-Release:	1
+Release:	2
 Epoch:		0
 License:	GPL v2
 Vendor:		Ed Schmollinger <schmolli@frozencrow.org>
