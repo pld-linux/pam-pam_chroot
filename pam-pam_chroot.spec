@@ -1,6 +1,7 @@
+%define 	modulename pam_chroot
 Summary:	PAM chroot module
 Summary(pl):	Modu³ PAM zamykaj±cy u¿ytkownika w chroocie
-Name:		pam-pam_chroot
+Name:		pam-%{modulename}
 Version:	0.6
 Release:	1
 Epoch:		0
@@ -11,6 +12,7 @@ Source0:	http://www.kernel.org/pub/linux/libs/pam/pre/modules/pam_chroot-%{versi
 # Source0-md5:	cd8ee12235c6bee6b825c295443bd8ae
 URL:		http://www.kernel.org/pub/linux/libs/pam/pre/modules/
 BuildRequires:	pam-devel
+Obsoletes:	%{modulename}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -20,7 +22,7 @@ PAM module which allows to chroot user enviroment.
 Modu³ PAM pozwalaj±cy na zamkniêcie u¿ytkownika w chroocie.
 
 %prep
-%setup -q
+%setup -q -n %{modulename}-%{version}
 
 %build
 %{__make} \
