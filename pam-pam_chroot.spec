@@ -31,9 +31,9 @@ Modu³ PAM pozwalaj±cy na zamkniêcie u¿ytkownika w chroocie.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{etc/security,lib/security}
+install -d $RPM_BUILD_ROOT{/etc/security,/%{_lib}/security}
 
-install pam_chroot.so $RPM_BUILD_ROOT/lib/security
+install pam_chroot.so $RPM_BUILD_ROOT/%{_lib}/security
 install chroot.conf $RPM_BUILD_ROOT%{_sysconfdir}/security/chroot.conf
 
 %clean
@@ -42,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CREDITS options
-%attr(755,root,root) /lib/security/pam_chroot.so
+%attr(755,root,root) /%{_lib}/security/pam_chroot.so
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/security/chroot.conf
