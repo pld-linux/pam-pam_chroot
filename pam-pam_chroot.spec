@@ -1,6 +1,6 @@
 %define 	modulename pam_chroot
 Summary:	PAM chroot module
-Summary(pl):	Modu³ PAM zamykaj±cy u¿ytkownika w chroocie
+Summary(pl.UTF-8):   ModuÅ‚ PAM zamykajÄ…cy uÅ¼ytkownika w chroocie
 Name:		pam-%{modulename}
 Version:	0.9.1
 Release:	0.1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 PAM module which allows to chroot user enviroment.
 
-%description -l pl
-Modu³ PAM pozwalaj±cy na zamkniêcie u¿ytkownika w chroocie.
+%description -l pl.UTF-8
+ModuÅ‚ PAM pozwalajÄ…cy na zamkniÄ™cie uÅ¼ytkownika w chroocie.
 
 %prep
 %setup -q -n %{modulename}-%{version}
