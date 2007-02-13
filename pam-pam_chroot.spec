@@ -1,6 +1,6 @@
 %define 	modulename pam_chroot
 Summary:	PAM chroot module
-Summary(pl.UTF-8):   Moduł PAM zamykający użytkownika w chroocie
+Summary(pl.UTF-8):	Moduł PAM zamykający użytkownika w chroocie
 Name:		pam-%{modulename}
 Version:	0.9.1
 Release:	0.1
