@@ -16,7 +16,7 @@ Obsoletes:	pam_chroot
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-PAM module which allows to chroot user enviroment.
+PAM module which allows to chroot user environment.
 
 %description -l pl.UTF-8
 Moduł PAM pozwalający na zamknięcie użytkownika w chroocie.
