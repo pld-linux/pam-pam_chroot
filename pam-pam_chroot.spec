@@ -2,14 +2,14 @@
 Summary:	PAM chroot module
 Summary(pl.UTF-8):	Moduł PAM zamykający użytkownika w chroocie
 Name:		pam-%{modulename}
-Version:	0.9.1
+Version:	0.9.2
 Release:	0.1
 Epoch:		0
 License:	GPL v2
 Vendor:		Ed Schmollinger <schmolli@frozencrow.org>
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/pam-chroot/pam_chroot-%{version}.tar.gz
-# Source0-md5:	444033be96a999d801dd49e06268b0d6
+# Source0-md5:	e901014a098170563d9d671324c8ffc5
 URL:		http://sourceforge.net/projects/pam-chroot/
 BuildRequires:	pam-devel
 Obsoletes:	pam_chroot
